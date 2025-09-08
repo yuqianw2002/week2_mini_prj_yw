@@ -9,7 +9,7 @@ The goal of this data anaylsis is compare the 10 years Boston weather from 2013 
 
 ## This dataset contains the following columns:
 - time: The date in string format
-tavg: The average air temperature in Celsius, as a float
+- tavg: The average air temperature in Celsius, as a float
 - tmin: The minimum air temperature in Celsius, as a float
 - tmax: The maximum air temperature in Celsius, as a float
 - prcp: The daily precipitation total in millimeters, as a float
