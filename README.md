@@ -7,7 +7,7 @@
 The goal of this data anaylsis is compare the 10 years Boston weather from 2013 to 2023, and try to predict the future weather. 
 
 
-### This dataset contains the following columns:
+## This dataset contains the following columns:
 - time: The date in string format
 tavg: The average air temperature in Celsius, as a float
 - tmin: The minimum air temperature in Celsius, as a float
