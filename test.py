@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import tempfile
 import os
-from bos_temp_refactored import BostonWeatherAnalyzer
+from bos_temp import BostonWeatherAnalyzer
 
 
 class TestBostonWeatherSimple(unittest.TestCase):
