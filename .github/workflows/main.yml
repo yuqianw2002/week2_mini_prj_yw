@@ -1,0 +1,39 @@
+name: Python CI for IDS706 (bos_temp)
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Lint with flake8
+      run: |
+        # lint the main module and tests (adjust paths as needed)
+        flake8 bos_temp.py tests || true
+
+    - name: Run tests with coverage
+      run: |
+        pytest -q --disable-warnings --maxfail=1 --cov=. --cov-report=term-missing
+
