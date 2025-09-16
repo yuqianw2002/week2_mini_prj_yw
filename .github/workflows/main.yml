@@ -1,4 +1,4 @@
-name: Python CI for IDS706 (bos_temp)
+name:  Boston Temperature Analysis
 
 on: [push, pull_request]
 

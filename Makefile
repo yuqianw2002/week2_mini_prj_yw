@@ -29,5 +29,3 @@ clean:
 	rm -rf __pycache__/
 	rm -f *.pyc
 	rm -f test_pred.png
-
-all: install format lint test run 
