@@ -1,3 +1,4 @@
+[![Python CI for IDS706 (bos_temp)](https://github.com/yuqianw2002/week2_mini_prj_yw/actions/workflows/main.yml/badge.svg)](https://github.com/yuqianw2002/week2_mini_prj_yw/actions/workflows/main.yml)
 # Week2_mini_prj_yw - Analysis Boston weather from 2013 to 2023
 
 - A data anaylsis for the Boston weather from 2013 to 2023 dataset from Kaggle (https://www.kaggle.com/datasets/swaroopmeher/boston-weather-2013-2023/data)
