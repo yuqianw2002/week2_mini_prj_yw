@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 # Import functions from the main module
-from bos_temp_re import (
+from bos_temp import (
     load_and_inspect_data,
     process_data,
     train_model,
