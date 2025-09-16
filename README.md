@@ -18,7 +18,11 @@ This project analyzes Boston weather data from 2013-2023, focusing on temperatur
     - wspd: The average wind speed in kilometers per hour, as a float
     - pres: The average sea-level air pressure in hectopascals, as a float
 3. Run Makefile to install all the packages using in for the projects.
-4. 
+
+## Result
+From the "test_pred.png", the predict temperature and the actual temperature are overlapping together, and the mean squared error of the predcit data and actual data is around 73.54. By using the simple lineat regression model to predic the temperature for Boston weather, it have a relevently good accuracy. 
+
+
 
 
 

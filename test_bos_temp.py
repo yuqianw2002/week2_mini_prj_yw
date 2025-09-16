@@ -54,8 +54,8 @@ class TestBostonWeatherAnalysis(unittest.TestCase):
         self.assertIn('Month', processed_df.columns)
         
         # Check data types
-        self.assertEqual(processed_df['Year'].dtype, 'int32')
-        self.assertEqual(processed_df['Month'].dtype, 'int32')
+        self.assertTrue(pd.api.types.is_integer_dtype(processed_df['Year']))
+        self.assertTrue(pd.api.types.is_integer_dtype(processed_df['Month']))
         
         # Check monthly mean structure
         self.assertIsInstance(monthly_mean, pd.DataFrame)

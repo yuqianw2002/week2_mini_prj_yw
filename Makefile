@@ -10,7 +10,7 @@ format:
 
 # Run tests 
 test:
-	python test_bos_temp.py
+	python -W ignore::DeprecationWarning test_bos_temp.py
 
 # Run tests with pytest 
 test-pytest:
