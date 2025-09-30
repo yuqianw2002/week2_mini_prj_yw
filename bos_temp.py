@@ -1,10 +1,12 @@
 import pandas as pd
-import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
-import seaborn as sns
+
+DATA = "boston_weather_data.csv"
+features = ['wspd', 'pres', 'wdir']
+target = 'tavg'
 
 
 def load_and_inspect_data(file_path):
@@ -57,7 +59,7 @@ def process_clean_data(df):
     return processed_df, monthly_mean, winter_mean
 
 
-def train_model(df, features=['wspd', 'pres', 'wdir'], target='tavg', test_size=0.2, random_state=42):
+def train_model(df, features=features, target=target, test_size=0.2, random_state=42):
     """Train a linear regression model on the weather data."""
     # Select features and target
     X = df[features]
@@ -103,10 +105,10 @@ def plot_predictions(X_test, y_test, y_pred, feature_name='wspd', target_name='t
 
 def main():
     # Load and inspect data
-    df = load_and_inspect_data("boston_weather_data.csv")
+    df = load_and_inspect_data(DATA)
 
     # Process data
-    processed_df, monthly_mean, winter_mean = process_data(df)
+    processed_df, monthly_mean, winter_mean = process_clean_data(df)
 
     print("Monthly mean (first 5 rows):")
     print(monthly_mean.head())
