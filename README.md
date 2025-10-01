@@ -21,7 +21,6 @@ This project analyzes Boston weather data from 2013-2023, focusing on temperatur
 
 ## Result
 From the "test_pred.png", the predict temperature and the actual temperature are overlapping together, and the mean squared error of the predcit data and actual data is around 73.54. By using the simple lineat regression model to predic the temperature for Boston weather, it have a relevently good accuracy. 
-![Result](img/test_pred.png)
 
 ## Dev-container
 1. Press `Cmd + Shift + P`, then click on "Dev Containers: Add Dev Container Configuration Files". 
