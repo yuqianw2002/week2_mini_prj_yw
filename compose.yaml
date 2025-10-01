@@ -1,0 +1,6 @@
+services:
+  week2miniprjyw:
+    image: week2miniprjyw
+    build:
+      context: .
+      dockerfile: ./Dockerfile

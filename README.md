@@ -21,7 +21,18 @@ This project analyzes Boston weather data from 2013-2023, focusing on temperatur
 
 ## Result
 From the "test_pred.png", the predict temperature and the actual temperature are overlapping together, and the mean squared error of the predcit data and actual data is around 73.54. By using the simple lineat regression model to predic the temperature for Boston weather, it have a relevently good accuracy. 
+![Result](img/test_pred.png)
 
+## Dev-container
+1. Press `Cmd + Shift + P`, then click on "Dev Containers: Add Dev Container Configuration Files". 
+2. Select the configuration of choice. Because we use all Python code, I choose Python 3. 
+3. In the next menu, add more features as needed. 
+4. Open the Dev container by clicking on the blue button on the bottom left corner of VSCode. 
+
+## Docker
+1. Press `Cmd + Shift + P`, then click on "Containers: Add Docker Files to Workspace." 
+2. In the terminal, ran: `docker build -t container-name .` I use 'bos_weather' as the image name.
+3. Next, I ran `docker run -d -p 8088:3000 --name bos-weather-container bos_weather`. This run the container in the Docker dashboard. 
 
 
 
